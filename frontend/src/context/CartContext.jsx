@@ -75,7 +75,7 @@ export const CartProvider = ({ children }) => {
             console.error("Error updating quantity:", error);
         }
     }
-
+    // Clear Cart context
     const clearCart = () => {
         setCartItems([]);
         setTotal(0);
