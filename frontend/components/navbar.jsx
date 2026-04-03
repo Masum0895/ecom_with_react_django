@@ -1,6 +1,6 @@
 import {Link, useNavigate} from 'react-router-dom';
 import { useCart } from '../src/context/CartContext';
-
+import { clearTokens, getAccessToken } from '../src/utils/auth';
 
 function Navbar() {
     const {cartItems} = useCart();
@@ -8,7 +8,7 @@ function Navbar() {
     
     const cartCount = cartItems.reduce((total, item) => total + item.quantity, 0);
     
-    {/* const isLoggedIn = !!getAccessToken(); */}
+     const isLoggedIn = !!getAccessToken(); 
 
     const handleLogout = () => {
         clearTokens();
@@ -20,7 +20,7 @@ function Navbar() {
              🛍️ MasumCart
             </Link>
 
-            {/* <div className='flex items-center gap-6'>
+             <div className='flex items-center gap-6'>
                 
                 {!isLoggedIn ? (
                     <>
@@ -36,7 +36,7 @@ function Navbar() {
                         Logout
                     </button>
                 )}
-            </div> */}
+            </div> 
 
             <Link to='/cart' className='relative text-gray-800 hover:text-gray-600 font-medium'>
                 🛒 Cart

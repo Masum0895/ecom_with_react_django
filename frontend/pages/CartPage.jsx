@@ -1,4 +1,5 @@
 import { useCart } from "../src/context/CartContext";
+import { authFetch, getAccessToken } from "../src/utils/auth";
 import { Link } from "react-router-dom";
 
 function CartPage() {
