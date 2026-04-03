@@ -1,0 +1,59 @@
+# Environment variables (CRITICAL - keep private)
+.env
+.env.local
+.env.production
+
+# Python / Django
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.log
+*.pot
+*.pyc
+db.sqlite3
+media/
+staticfiles/
+static/
+migrations/__pycache__/
+*.dump
+*.sql
+
+# Virtual Environment (your "new folder" from earlier)
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+new folder/
+.venv/
+myenv/
+
+# Backend specific
+local_settings.py
+*.pyc
+
+# Node / React / Vite (frontend)
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/build/
+frontend/.env.local
+frontend/package-lock.json  # Optional: commit or ignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
