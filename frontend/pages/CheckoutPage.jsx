@@ -84,7 +84,7 @@ function CheckoutPage() {
             <option value="ONLINE">Online Payment</option>
           </select>
 
-          <button className="w-full bg-green-600 text-white py-2 rounded">
+          <button type="submit" className="w-full bg-green-600 text-white py-2 rounded">
             Place Order
           </button>
         </form>
